@@ -1,0 +1,37 @@
+.quadro1{
+    height:300px;
+    text-align: center;
+    margin-left: 15%;
+    margin-right: 15%;
+}
+
+.inpNome{
+    width: 50%;
+}
+
+.titulo{
+    margin-left: 10%;
+    margin-right: 10%;
+    text-align: center;
+    color: #ed7723;
+}
+
+.btnCadastro{
+
+
+}
+
+.textoTipo{
+    color:#ed7723;
+    text-transform: uppercase;
+    font-weight: bolder;
+    font-size: 18px;
+}
+
+.boxTipo{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 50%;
+}
