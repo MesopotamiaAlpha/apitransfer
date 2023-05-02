@@ -9,11 +9,11 @@
     width: 50%;
 }
 
-.titulo{
+.titulo2{
     margin-left: 10%;
     margin-right: 10%;
     text-align: center;
-    color: #ed7723;
+    color: #ffffff;
 }
 
 .btnCadastro{
@@ -22,7 +22,7 @@
 }
 
 .textoTipo{
-    color:#ed7723;
+    color:#ffffff;
     text-transform: uppercase;
     font-weight: bolder;
     font-size: 18px;
