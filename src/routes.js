@@ -1,7 +1,6 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Routes, NavLink } from 'react-router-dom';
-import SearchAppBar from './components/topBar'
-import Cadastro_Pri from './components/prinex/cadastro_pri';
+import Cadastro_Pri from './components/cliente/cadastro_cli';
 import FechamentoCaixa from './components/fechamentoCaixa/fechamentoCaixa';
 import Agendamento from './components/agendamento/agendamento';
 import Estoque from './components/estoque/estoque';
@@ -14,7 +13,6 @@ export default function MainRoutes() {
     return (
         <Router>
 
-            <SearchAppBar > </SearchAppBar>
             <NavLink style={
                 {
                     color: '#fff',
@@ -66,23 +64,6 @@ export default function MainRoutes() {
                     justifyContent: 'center',
                 }
             } to="/agendamento">Agendamento de passageiros</NavLink>
-            <NavLink style={
-                {
-                    color: '#fff',
-                    textDecoration: 'none',
-                    marginLeft: '10px',
-                    marginRight: '10px',
-                    marginTop: '10px',
-                    marginBottom: '10px',
-                    backgroundColor: '#00bcd4',
-                    borderRadius: '5px',
-                    padding: '10px',
-                    fontSize: '20px',
-                    fontWeight: 'bold',
-                    border: '1px solid #00bcd4',
-                    justifyContent: 'center',
-                }
-            } to="/estoque">Estoque</NavLink>
             <NavLink style={
                 {
                     color: '#fff',

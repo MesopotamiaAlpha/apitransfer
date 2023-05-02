@@ -6,7 +6,7 @@ import { ListItemButton, Button, Paper } from '@mui/material';
 import DeleteIcon from '@mui/icons-material/Delete';
 
 
-const url = "http://192.168.1.23:3002/api";
+const url = "http://192.168.0.114:3002/api";
 
 
 // esta função traz todos os registros dentro do banco de dados e usa a função map para criar um array de objetos
@@ -36,7 +36,7 @@ function Resultado_Pri() {
         <Paper className="paper" elevation={12} style={{ padding: 1, backgroundColor: "#eaeef3" }} sx={{ mx: 5, textAlign: 'center' }} >
             <div className="resultado">
 
-                <h1 className="titulo">Prinex recebidos</h1>
+                <h1 className="titulo">Transfers solicitados</h1>
                 <ul className="listaUl">
 
                     {postList.map(nome_prinex =>
