@@ -18,7 +18,7 @@ function Resultado_cli() {
             setPostList(data.data);
             console.log(data.data);
         });
-    }, []);
+    }, [postList]);
 
     function deletPost(id) {
         Axios.delete(url + `/delete/${id}`).then((response) => {
