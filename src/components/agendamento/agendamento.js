@@ -7,8 +7,6 @@ import SendIcon from '@material-ui/icons/Send';
 
 
 
-
-
 function Agendamento_cli() {
 
     const [userDestinatario, setDestinatario] = useState("");

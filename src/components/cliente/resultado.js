@@ -4,13 +4,17 @@ import "./resultado.css";
 import Axios from "axios";
 import { Checkbox, Paper, Table, TableBody, TableCell, TableContainer, TableHead, TableRow, Button } from '@mui/material';
 import DeleteIcon from '@mui/icons-material/Delete';
+import rota from "../../conf/rota.js";
 
-const url = "http://192.168.0.115:3002/api";
+const url = "http://192.168.0.113:3002/api";
+
+
 
 function Resultado_cli() {
     const [postList, setPostList] = useState([]);
 
     useEffect(() => {
+        // eslint-disable-next-line no-undef
         Axios.get(url + "/get").then((response) => {
             setPostList(response.data);
         });
