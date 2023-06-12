@@ -21,7 +21,8 @@ function Agendamento_cli() {
     const [userData, setData] = useState("");
 
     const submitPost = () => {
-        Axios.post('http://192.168.0.114:3002/api/create', { userDestinatario: userDestinatario, userTipo: userTipo, userCte: userCte, userData: userData }).then(res => {
+        //lembrar de colocar o ip externo  "http://djzefx.ddns.net:3002/api/create"
+        Axios.post('http://192.168.0.113:3002/api/create', { userDestinatario: userDestinatario, userTipo: userTipo, userCte: userCte, userData: userData }).then(res => {
             console.log(res);
             
         }, err => {
