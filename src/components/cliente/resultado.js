@@ -7,7 +7,7 @@ import DeleteIcon from '@mui/icons-material/Delete';
 import rota from "../../conf/rota.js";
 
 const url = "http://192.168.0.113:3002/api";
-
+//lembrar de colocar o ip externo  "http://djzefx.ddns.net:3002/api"
 
 
 function Resultado_cli() {
