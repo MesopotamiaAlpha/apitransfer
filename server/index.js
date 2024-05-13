@@ -9,7 +9,7 @@ app.use(express.json())
 
 // Route to get all posts
 app.get("/api/get", (req, res) => {
-    db.query("SELECT * FROM prinex", (err, result) => {
+    db.query("SELECT * FROM banco", (err, result) => {
         if (err) {
             console.log(err)
         }
@@ -17,11 +17,11 @@ app.get("/api/get", (req, res) => {
     });
 });
 
-// Rota para pegar dados do prinex
+// Rota para pegar dados do banco
 app.get("/api/getFromId/:id", (req, res) => {
 
     const id = req.params.id;
-    db.query("SELECT * FROM prinex WHERE id_pri = ?", id,
+    db.query("SELECT * FROM banco WHERE id_pri = ?", id,
         (err, result) => {
             if (err) {
                 console.log(err)
@@ -54,7 +54,7 @@ app.post('/api/create', (req, res) => {
 
     console.log(usedestinatario, usertipo , usercte, userdata)
 
-    db.query("INSERT INTO prinex (destinatario,tipo,cte,cad_data) VALUES (?,?,?,?)", [usedestinatario,usertipo,usercte,userdata], (err, result) => {
+    db.query("INSERT INTO banco (destinatario,tipo,cte,cad_data) VALUES (?,?,?,?)", [usedestinatario,usertipo,usercte,userdata], (err, result) => {
         if (err) {
             console.log(err)
         }
@@ -67,7 +67,7 @@ app.post('/api/create', (req, res) => {
 app.delete('/api/delete/:id', (req, res) => {
     const id = req.params.id;
 
-    db.query("DELETE FROM prinex WHERE id_pri= ?", id, (err, result) => {
+    db.query("DELETE FROM banco WHERE id_pri= ?", id, (err, result) => {
         if (err) {
             console.log(err)
         }

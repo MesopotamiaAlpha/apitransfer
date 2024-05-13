@@ -55,24 +55,24 @@ function Resultado_cli() {
                         </TableHead>
                         <TableBody>
                             {postList.length ? (
-                                postList.map((nome_prinex) => (
+                                postList.map((nome_banco) => (
                                     <TableRow
-                                        key={nome_prinex.id_pri}
-                                        style={{ backgroundColor: nome_prinex.done ? "green" : "#eaeef3" }}
+                                        key={nome_banco.id_pri}
+                                        style={{ backgroundColor: nome_banco.done ? "green" : "#eaeef3" }}
                                     >
                                         <TableCell>
                                             <Checkbox
-                                                checked={nome_prinex.done}
-                                                onChange={() => handleDone(nome_prinex.id_pri)}
+                                                checked={nome_banco.done}
+                                                onChange={() => handleDone(nome_banco.id_pri)}
                                             />
                                         </TableCell>
-                                        <TableCell>{nome_prinex.destinatario}</TableCell>
-                                        <TableCell>{nome_prinex.tipo}</TableCell>
-                                        <TableCell>{nome_prinex.cte}</TableCell>
-                                        <TableCell>{nome_prinex.cad_data}</TableCell>
-                                        <TableCell>{nome_prinex.id_pri}</TableCell>
+                                        <TableCell>{nome_banco.destinatario}</TableCell>
+                                        <TableCell>{nome_banco.tipo}</TableCell>
+                                        <TableCell>{nome_banco.cte}</TableCell>
+                                        <TableCell>{nome_banco.cad_data}</TableCell>
+                                        <TableCell>{nome_banco.id_pri}</TableCell>
                                         <TableCell>
-                                        <Button className="btnDel" onClick={() => deletPost(nome_prinex.id_pri)}>
+                                        <Button className="btnDel" onClick={() => deletPost(nome_banco.id_pri)}>
                         <DeleteIcon/>
                       </Button>
                                         </TableCell>

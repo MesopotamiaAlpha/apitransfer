@@ -2,13 +2,13 @@ drop database cadastroPassageiros;
 create database cadastroPassageiros;
 use cadastroPassageiros;
 
-##area dos cadastros de prinex
+##area dos cadastros de banco
 
-select * from prinex;
+select * from banco;
 
 show tables;
 
-CREATE TABLE IF NOT EXISTS `cadastroPassageiros`.`prinex` (
+CREATE TABLE IF NOT EXISTS `cadastroPassageiros`.`banco` (
   `id_pri` INT NOT NULL AUTO_INCREMENT,
   `destinatario` VARCHAR(90) NOT NULL,
   `tipo` VARCHAR(10) NULL DEFAULT NULL,
